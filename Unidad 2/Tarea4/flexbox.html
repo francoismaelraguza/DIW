@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarea 2.4. Flexbox</title>
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Tarea 2.4.</h1>
+    <h2>Maquetación con Flexbox (display: flex)</h2>
+  </header>
+
+  <!------Paso 1------------------>
+  <nav>
+    <ul>
+      <li><a href="#direccion">Dirección</a></li>
+      <li><a href="#justificacion">Justificación</a></li>
+      <li><a href="#alineacion">Alineación</a></li>
+      <li><a href="#saltos">Saltos/Separación</a></li>
+      <li><a href="#crecimiento">Crecimiento</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!------Paso 2------------------>
+    <section id="direccion">
+      <h2>Dirección del eje principal</h2>
+
+      <h3>Contenedor d1:</h3>
+      <div class="contenedor d1">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+
+      <h3>Contenedor d2:</h3>
+      <div class="contenedor d2">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+
+      <h3>Contenedor d3:</h3>
+      <div class="contenedor d3">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+
+      <h3>Contenedor d4:</h3>
+      <div class="contenedor d4">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+    </section>
+
+    <!------Paso 3------------------>
+    <section id="justificacion">
+      <h2>Reparto en el eje principal</h2>
+
+      <h3>Contenedor j1:</h3>
+      <div class="contenedor j1">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+      <h3>Contenedor j2:</h3>
+      <div class="contenedor j2">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+      <h3>Contenedor j3:</h3>
+      <div class="contenedor j3">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+      <h3>Contenedor j4:</h3>
+      <div class="contenedor j4">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+      <h3>Contenedor j5:</h3>
+      <div class="contenedor j5">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+      <h3>Contenedor j6:</h3>
+      <div class="contenedor j6">
+        <div class="item">Bloque 1</div>
+        <div class="item">Bloque 2</div>
+        <div class="item">Bloque 3</div>
+      </div>
+
+
+      <!------Paso 4------------------>
+      <section id="alineacion">
+        <h2>Alineación en el eje secundario</h2>
+
+        <h3>Contenedor al1</h3>
+        <div class="contenedor fijo al1">
+          <div class="item">Bloque 1</div>
+          <div class="item i2">Bloque 2</div>
+          <div class="item i3">Bloque 3</div>
+        </div>
+
+        <h3>Contenedor al2</h3>
+        <div class="contenedor fijo al2">
+          <div class="item">Bloque 1</div>
+          <div class="item i2">Bloque 2</div>
+          <div class="item i3">Bloque 3</div>
+        </div>
+
+        <h3>Contenedor al3</h3>
+        <div class="contenedor fijo al3">
+          <div class="item">Bloque 1</div>
+          <div class="item i2">Bloque 2</div>
+          <div class="item i3">Bloque 3</div>
+        </div>
+
+        <h3>Contenedor al4</h3>
+        <div class="contenedor fijo al4">
+          <div class="item">Bloque 1</div>
+          <div class="item i2">Bloque 2</div>
+          <div class="item i3">Bloque 3</div>
+        </div>
+
+        <h3>Contenedor al5</h3>
+        <div class="contenedor fijo al5">
+          <div class="item">Bloque 1</div>
+          <div class="item i2 ind">Bloque .ind</div>
+          <div class="item i3">Bloque 3</div>
+        </div>
+      </section>
+
+      <!------Paso 5------------------>
+      <section id="saltos">
+        <h2>Saltos de línea y separación</h2>
+        <div class="contenedor w1">
+          <div class="item ancho">Bloque 1</div>
+          <div class="item ancho">Bloque 2</div>
+          <div class="item ancho">Bloque 3</div>
+          <div class="item ancho">Bloque 4</div>
+          <div class="item ancho">Bloque 5</div>
+          <div class="item ancho">Bloque 6</div>
+          <div class="item ancho">Bloque 7</div>
+          <div class="item ancho">Bloque 8</div>
+        </div>
+      </section>
+
+      <!------Paso 6------------------>
+      <section id="crecimiento">
+        <h2>Crecimiento y orden de los ítems</h2>
+
+        <h3>Contenedor g1</h3>
+        <div class="contenedor g1">
+          <div class="item g-a">Bloque A</div>
+          <div class="item g-b">Bloque B</div>
+          <div class="item g-c">C</div>
+        </div>
+
+        <h3>Contenedor o1</h3>
+        <div class="contenedor o1">
+          <div class="item">Bloque 1</div>
+          <div class="item">Bloque 2</div>
+          <div class="item">Bloque 3</div>
+          <div class="item o-4">Bloque 4</div>
+        </div>
+      </section>
+
+      <!------Paso 7------------------>
+      <section id="patrones">
+        <h2>Patrones habituales</h2>
+
+        <h3>Centrado perfecto</h3>
+        <div class="contenedor centro">
+          <div class="item">Centrado en vertical y en horizontal</div>
+        </div>
+
+        <h3>Tarjetas de igual ancho</h3>
+        <div class="contenedor igual-ancho">
+          <div class="item targeta">Tarjeta 1</div>
+          <div class="item targeta">Tarjeta 2</div>
+          <div class="item targeta">Tarjeta 3</div>
+        </div>
+
+        <h3>Pie siempre abajo</h3>
+        <div class="pagina">
+          <div class="pagina-cabecera">Cabecera</div>
+          <div class="pagina-main">Contenido:Aúnque es pequeño, ocupa todo el espacio enviando el pie al fondo </div>
+          <div class="pagina-pie">Pie de página</div>
+        </div>
+      </section>
+
+
+      <!------Paso 8------------------>
+      <section id="inline">
+        <h2>Contenedor en línea</h2>
+
+        <h3>display: flex (el contenedor se comporta como un bloque)</h3>
+        <div>
+          Texto antes
+          <div class="contenedor if1">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+          </div>
+          texto después.
+        </div>
+
+        <h3>display: inline-flex (el contenedor se comporta como un elemento en línea)</h3>
+        <div>
+          Texto antes
+          <div class="contenedor if2">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+          </div>
+          texto después.
+        </div>
+
+  </main>
+
+  <footer>
+    <h3>Fin de la tarea de Flexbox.</h3>
+    <div class="separacion"></div>
+    <img class="imagen" src="logo.jpg">
+  </footer>
+
+</body>
+
+</html>

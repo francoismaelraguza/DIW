@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /*Se eliminan los margenes y rellenos por defecto del navegador, se aplica border-box 
+    que resta  el relleno y los margenes del ancho de los elementos*/
+}
+.caja-a{
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    box-sizing: content-box;
+}
+.caja-b{
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    box-sizing: border-box;
+}
+
+#caja1{
+    padding: 15px; 
+    /*los 4 lados*/
+}
+#caja2{
+    padding: 15px 10px;
+    /*ariba y abajo / izquierda y derecha*/
+
+}
+#caja3{
+    padding: 15px 11px 20px;
+    /*ariba  / izquierda y derecha / abajo*/
+
+}
+#caja4{
+    padding: 15px 20px 10px 20px;
+    /*ariba  / derecha / abajo / izquierda*/
+
+}
+.a { margin-bottom: 80px; background: #f6c9c9; }
+/*El margen es de 80 px en total, prevalece el mas grande */
+.b { margin-top: 20px; background: #c9f6d0; }
+
+.centrado{
+    width: 0;
+    margin: auto;
+    /*
+    -auto centra la caja porque el establece los margenes segun el espacion de pantalla
+    - los elementos en bloque ocupan por defecto el 100% del ancho por lo que no pdria tener margenes
+    */
+}
+#spanPrueba {
+display: inline-block; /*ahora si se ve afectado por los siguentes 4 atributos*/
+width: 150px;
+height: 60px;
+margin: 30px;
+padding: 10px;
+border: 3px solid crimson;
+}
+#divPrueba {
+width: 150px;
+height: 60px;
+margin: 30px;
+padding: 10px;
+border: 3px solid crimson;
+}
+/*Con el mismo estilo css el span tiene un borde rojo sin afectarle los otros 4 atributos, en el div
+se pueden ver correctamente reflejadas*/

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="Safari en África">
+  <title>Safari en África</title>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9f5a"/><stop offset="1" stop-color="#ffe2a8"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#s)"/>
+  <circle cx="110" cy="112" r="46" fill="#ffd24d" fill-opacity=".9"/>
+  <path d="M0 200 V150 Q200 126 400 152 V200 Z" fill="#b07a3a"/>
+  <path d="M0 200 V170 Q200 152 400 172 V200 Z" fill="#8f5f27"/>
+  <path d="M296 176 V114 Q290 100 276 92 M296 120 Q310 104 330 100" stroke="#3b2a14" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <ellipse cx="296" cy="88" rx="62" ry="14" fill="#3f6d2a"/><ellipse cx="270" cy="96" rx="38" ry="9" fill="#4f8236"/>
+  <g stroke="#3b2a14" stroke-width="3" fill="none" stroke-linecap="round"><path d="M170 60 q8 -9 16 0 q8 -9 16 0"/><path d="M215 36 q6 -7 12 0 q6 -7 12 0"/><path d="M150 28 q5 -6 10 0 q5 -6 10 0"/></g>
+</svg>

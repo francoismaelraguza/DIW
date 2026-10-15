@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="Egipto y las pirámides">
+  <title>Egipto y las pirámides</title>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7a35c"/><stop offset="1" stop-color="#fde3a1"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#s)"/>
+  <circle cx="90" cy="70" r="40" fill="#fff3c2" fill-opacity=".85"/>
+  <polygon points="150,150 235,52 320,150" fill="#d9a65a"/><polygon points="235,52 320,150 262,150" fill="#b88540"/>
+  <polygon points="250,150 310,84 370,150" fill="#d9a65a"/><polygon points="310,84 370,150 330,150" fill="#b88540"/>
+  <polygon points="100,150 138,108 176,150" fill="#d9a65a"/><polygon points="138,108 176,150 150,150" fill="#b88540"/>
+  <path d="M0 200 V160 Q100 128 200 156 T400 146 V200 Z" fill="#eab869"/>
+  <path d="M0 200 V176 Q120 156 230 178 T400 170 V200 Z" fill="#dba24d"/>
+</svg>

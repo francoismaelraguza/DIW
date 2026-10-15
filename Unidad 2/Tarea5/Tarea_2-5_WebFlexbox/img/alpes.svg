@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="Alpes suizos">
+  <title>Alpes suizos</title>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7ec8f0"/><stop offset="1" stop-color="#d8f0fb"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#s)"/>
+  <circle cx="320" cy="44" r="22" fill="#fff6c9"/>
+  <polygon points="-20,200 110,50 250,200" fill="#6b84a3"/>
+  <polygon points="110,50 138,86 120,80 108,96 96,78 82,86" fill="#fff"/>
+  <polygon points="130,200 270,30 430,200" fill="#8aa1bd"/>
+  <polygon points="270,30 300,70 282,64 270,84 256,62 240,70" fill="#fff"/>
+  <path d="M0 200 V160 Q100 140 200 164 T400 154 V200 Z" fill="#4f8f5b"/>
+  <g fill="#2f6b3f"><polygon points="40,170 52,140 64,170"/><polygon points="62,176 76,142 90,176"/><polygon points="320,172 332,144 344,172"/><polygon points="342,178 356,146 370,178"/></g>
+</svg>

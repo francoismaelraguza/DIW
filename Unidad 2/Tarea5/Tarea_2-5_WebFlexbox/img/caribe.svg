@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="Playa del Caribe">
+  <title>Playa del Caribe</title>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ad0f2"/><stop offset="1" stop-color="#fdf2c4"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#s)"/>
+  <circle cx="318" cy="52" r="26" fill="#ffd24d"/><circle cx="318" cy="52" r="38" fill="#ffd24d" fill-opacity=".25"/>
+  <rect y="104" width="400" height="50" fill="#27b3c8"/>
+  <path d="M0 114 q20 -6 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke="#bdeaf2" stroke-width="3" fill="none"/>
+  <path d="M0 200 V148 Q150 126 400 160 V200 Z" fill="#f5deaa"/>
+  <path d="M96 190 Q92 130 112 80" stroke="#7a5230" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g fill="#2f9e4f"><path d="M112 80 q-44 -14 -66 12 q40 -8 66 -12z"/><path d="M112 80 q-12 -42 -52 -40 q34 14 52 40z"/><path d="M112 80 q20 -44 62 -34 q-38 8 -62 34z"/><path d="M112 80 q46 -6 68 26 q-40 -14 -68 -26z"/></g>
+  <circle cx="108" cy="86" r="5" fill="#6b4423"/><circle cx="118" cy="88" r="5" fill="#6b4423"/>
+</svg>

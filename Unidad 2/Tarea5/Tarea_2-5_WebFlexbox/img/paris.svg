@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="París">
+  <title>París</title>
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ad0f5"/><stop offset="1" stop-color="#fde9d6"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#s)"/>
+  <g fill="#fff" fill-opacity=".8"><ellipse cx="70" cy="48" rx="34" ry="11"/><ellipse cx="96" cy="40" rx="22" ry="9"/><ellipse cx="320" cy="62" rx="30" ry="10"/></g>
+  <path d="M0 200 V160 Q100 140 200 158 T400 150 V200 Z" fill="#7fb069"/>
+  <polygon points="200,18 224,170 176,170" fill="#4a4e69"/>
+  <rect x="190" y="76" width="20" height="5" fill="#9a8c98"/><rect x="184" y="110" width="32" height="5" fill="#9a8c98"/>
+  <path d="M178 170 Q200 120 222 170 Z" fill="#9ad0f5"/><path d="M178 170 Q200 120 222 170 Z" fill="#fde9d6" fill-opacity=".45"/>
+  <path d="M196 40 L206 40 M193 56 L207 56" stroke="#9a8c98" stroke-width="3"/>
+  <rect x="120" y="164" width="160" height="10" fill="#6b6b7b"/>
+</svg>

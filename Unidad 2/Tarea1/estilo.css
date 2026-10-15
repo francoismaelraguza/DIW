@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div, p, h1, h2, h3, h4, section, article, aside, address, ul, ol, dl, dt, dd, form, fieldset, figure, figcaption {
+    outline: 1px solid #033169;
+    background: #3bc2ef;
+    margin: 6px 0;
+    padding: 6px;
+}
+
+span, a, strong, em, u, small, mark, code, abbr, sub, sup, del, ins {
+    outline: 1px dashed #F5BF98;
+    background: #F5ED98;
+}
+
+button, input, select, textarea, img {
+    outline: 1px solid #2A910D;
+    background: #BDF9CE;
+}
+.caja {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    margin: 8px;
+}
+
+.bloque {
+    display: block;
+    outline: 1px solid #033169;
+    background: #3bc2ef;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.linea {
+    display: inline;
+    outline: 1px dashed #F5BF98;
+    background: #F5ED98;
+    padding: 4px;
+}

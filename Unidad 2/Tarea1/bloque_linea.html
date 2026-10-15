@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>TAREA 1: Elementos en bloque y en línea</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#seccion1">Bloque</a></li>
+            <li><a href="#seccion2">Línea</a></li>
+            <li><a href="#seccion3">Remplazados</a></li>
+            <li><a href="#seccion4">inline-block</a></li>
+            <li><a href="#seccion5">display</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="seccion1">
+            <h2>Elementos en bloque</h2>
+
+            <h1>Encabezado H1: Título principal en bloque</h1>
+            <h2>Encabezado H2: Subtítulo de nivel 2</h2>
+            <h3>Encabezado H3: Subtítulo de nivel 3</h3>
+            
+            <div>
+                Este <code>&lt;div&gt;</code> es un contenedor genérico en bloque.
+            </div>
+            
+            <p>
+                Este es un párrafo (<code>&lt;p&gt;</code>) de texto explicativo en bloque.
+            </p>
+            
+            <article>
+                <h3>Articulo (&lt;article&gt;)</h3>
+                <p>Representa un contenido independiente y autocontenido.</p>
+            </article>
+            
+            <aside>
+                <p>Este es un <code>&lt;aside&gt;</code>: contenido secundario o barra lateral.</p>
+            </aside>
+            
+            <address>
+                Contacto: <a href="mailto:alumno@ejemplo.com">alumno@ejemplo.com</a> (&lt;address&gt;)
+            </address>
+            
+            <!-- 3. Listas -->
+            <h4>Lista desordenada (&lt;ul&gt;):</h4>
+            <ul>
+                <li>Elemento 1 de la lista</li>
+                <li>Elemento 2 de la lista</li>
+            </ul>
+            
+            <h4>Lista ordenada (&lt;ol&gt;):</h4>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+            </ol>
+            
+            <h4>Lista de definición (&lt;dl&gt;):</h4>
+            <dl>
+                <dt>Termino HTML</dt>
+                <dd>Lenguaje de marcado para la web.</dd>
+            </dl>
+            
+            <!-- 4. Formulario -->
+            <form>
+                <fieldset>
+                    <legend>Formulario (&lt;form&gt; con &lt;fieldset&gt;)</legend>
+                    <p>Los formularios y fieldsets también se comportan como bloques por defecto.</p>
+                </fieldset>
+            </form>
+            
+            <!-- 5. Figura -->
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Ejemplo de figura">
+                <figcaption>Pie de foto explicativo (&lt;figcaption&gt;)</figcaption>
+            </figure>
+        </section>
+        <section id="seccion2">
+            <h2>Elementos en línea</h2>
+            <p>Parrafo nomral con<br> un salto de linea</p>
+            <hr>
+            <p>Ahora usamos una etiqueta <span>Spam</span></p>
+            <hr>
+            <p>
+                Tambien podemos poner
+                <a href="#seccion1">enlaces a otras secciones</a>.
+            </p>
+            <p>Tambien <strong>realtar texto</strong> en negrita</p>
+            <p>
+                Podemos aplicar formato con texto en <strong>negrita</strong>,
+                <em>cursiva</em>, <u>subrayado</u>,
+                un texto <small>más pequeño </small> o
+                <mark>resaltado</mark>.
+            </p>
+            <p>
+                También podemos incluir fragmentos de código como <code>console.log()</code> y abreviaturas como
+                <abbr title="HyperText Markup Language">HTML</abbr> pasando el ratón por encima.
+            </p>
+            <p>
+                Para fórmulas químicas o matemáticas utilizamos subíndices y superíndices:
+                H<sub>2</sub>O y x<sup>2</sup>.
+            </p>
+            <p>
+                Por último, para indicar correcciones o cambios de texto se usa
+                <del>texto eliminado </del>
+                <ins>texto insertado</ins>.
+            </p>
+        </section>
+        <section id="seccion3">
+            <h2>Elementos remplazados</h2>
+            <section id="seccion3">
+                <h2>Sección 3: Elementos reemplazados</h2>
+
+                <p>
+                    una imagen
+                    <img src="img.png" alt="Ejemplo" width="40" height="40">,
+                    un botón <button type="button">Enviar</button>,
+                    un campo de entrada <input type="text" placeholder="Escribe aquí...">,
+                    un selector
+                    <select>
+                        <option>Opción 1</option>
+                        <option>Opción 2</option>
+                    </select>
+                    y un área de texto <textarea rows="1" cols="15" placeholder="Comentario..."></textarea>
+
+                </p>
+            </section>
+        </section>
+        <section id="seccion4">
+            <h2>Elementos inline-block</h2>
+            <span class="caja">elemento 1</span>
+            <span class="caja">elemento 2</span>
+            <span class="caja">elemento 3</span>
+
+        </section>
+        <section id="seccion5">
+            <h2>Elementos display</h2>
+            <span class="bloque">
+            Esto era una línea, pero ahora tiene display: block.
+            </span>
+            <div class="linea">
+                Este div  tiene display: inline.
+            </div>
+            <div class="linea">
+                Este  también y se queda al lado del anterior.
+            </div>
+        </section>
+
+       
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
