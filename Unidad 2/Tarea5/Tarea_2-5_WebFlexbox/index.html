@@ -6,19 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agencia de viajes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">
+        <a class="logo enlace-head" href="index.html">
             <img class="logo-img" src="img/logo.svg" alt="logo de la agencia">
             <span class="logo-text">Julio Travel</span>
         </a>
         <div class="espacio"></div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Destinos</a></li>
-            <li><a href="index.html">Contacto</a></li>
+        <ul class="lista-head">
+            <li><a class="enlace-head" href="index.html">Inicio</a></li>
+            <li><a class="enlace-head" href="index.html">Destinos</a></li>
+            <li><a class="enlace-head" href="index.html">Contacto</a></li>
         </ul>
     </header>
         <main>
@@ -28,10 +31,15 @@
                 23 años de experiencia, te ayudamos a organizar el viaje de tus sueños!</p>
                 <a class="enlace enlace-grande" href="paginas/catalogo.html">Encuentra tu destino hoy</a>
             </section>
-            <section class="tarjeta-cuerpo">
-                <h2>Escapadas de fin de semana</h2>
+            <div class="banda-sec">
+                <div class="viajes">
+                    <div class="destacados">
+                        <h2>Escapadas de fin de semana</h2>
+                    <section class="tarjeta-cuerpo">
+
                 <article class="tarjeta">
                     <img src="img/japon.svg" alt="la palma">
+
                 </article>
                 <article class="tarjeta">
                     <img src="img/caribe.svg" alt="lanzarote">
@@ -41,25 +49,52 @@
                 </article>
                 <article class="texto-presentacion"></article>
             </section>
-            <aside class="barra-lateral">
+                    </div>
+                    <section class="texto-presentacion">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin accumsan leo eget viverra. Proin vitae ultrices ante, a placerat quam. Phasellus consequat, ligula eget venenatis vehicula, metus libero auctor magna, in consectetur odio mi quis lorem. Donec aliquam quam quis commodo semper. Etiam faucibus, dui sit amet accumsan lacinia, lacus urna consectetur ante, eu tincidunt odio nibh sit amet est. Maecenas nec congue nunc, at consequat tortor. Sed consequat purus sit amet imperdiet varius.</p>
+                    </section>
+                </div>
+                <aside class="barra-lateral">
                 <section class="panel">
                     <article class="ofertas">
-
+                        <img src="img/grecia.svg" alt="grecia">
                     </article>
+                    <article class="ofertas">
+                        <img src="img/paris.svg" alt="paris">
+                    </article>
+
                 </section>
                 <section class="panel">
-                    <article class="guias"></article>
+                    <article class="guias">
+                        <h3>Las 7 maravillas del mundo</h3>
+                        <p>Conoce los lugares más interesantes del mundo y la historia detras de ellos</p>
+                    </article>
                 </section>
             </aside>
+            </div>
 
         </main>
     <footer>
         <div class="pie-enlace">
-            <div class="columna"></div>
-            <div class="columna"></div>
-            <div class="columna"></div>
+            <div class="columna">Julio Travel. Agencia de Viajes </div>
+            <div class="columna">
+                <h2>Sobre nosotros</h2>
+                <ul>
+                    <li>Fundacion Julio</li>
+                    <li>Unete al equipo</li>
+                    <li>Lucha contra la gentrificacion</li>
+                </ul>
+            </div>
+            <div class="columna">
+                <h2>Informacion</h2>
+                <ul>
+                    <li>Llamanos: <br>+34 654987321<br></li>
+                    <li>Email: <br>juliolopez@travel.es<br></li>
+                    <li>Calle Lujan Perez, 10</li>
+                </ul>
+            </div>
         </div>
-        <div class="derechos">Derechos reservados 2026</div>
+        <div class="derechos">© Julio Travel 2026. Ningún derecho reservado.</div>
     </footer>
 </body>
 </html>
