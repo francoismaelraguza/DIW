@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e2f4fb;
+}
+
+main {
+  padding: 18px;
+}
+
+header,
+footer {
+  background: #1f4e79;
+  color: white;
+  padding: 16px;
+}
+
+section {
+  margin-top: 32px;
+  border: 1px solid #033573;
+  padding: 12px;
+}
+
+h2 {
+  border-bottom: 2px solid #1f4e79;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin: 16px 0 6px;
+  color: #555;
+}
+
+.contenedor {
+  border: 2px dashed #4a7fc1;
+  padding: 8px;
+  background: #eef4fb;
+}
+
+.item {
+  background: #4a7fc1;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.destacado {
+  background: #c2603a;
+}
+
+.alto {
+  background: #2f9e6b;
+}
+
+.ancho-total {
+  background: #7a4ab5;
+}
+
+.centro {
+  height: 200px;
+}
+
+.mensaje {
+  margin: 0;
+  font-weight: bold;
+}
+
+.miPagina {
+  min-height: 300px;
+  border: 2px solid #333;
+  padding: 8px;
+  background: #eef4fb;
+}
+
+.cab,
+.pie {
+  background: #333;
+  color: white;
+  padding: 12px;
+}
+
+.menu {
+  background: #2f9e6b;
+  color: white;
+  padding: 12px;
+}
+
+.cont {
+  padding: 12px;
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input {
+  padding: 6px;
+}
+
+.alto-fijo {
+  height: 120px;
+}
+
+.im1,
+.im2 {
+  height: 300px;
+  gap: 12px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/***************Ejercicios**************/
+
+.g1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.g2{
+  display: grid;
+  grid-template-columns: 200px 1fr 2fr;
+  gap: 12px;
+  /*La primera columna medira 200px la segunda 200 y la tercera 400*/
+}
+
+.g3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60px 100px;
+  gap: 12px;
+}
+
+.g4{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+
+.g5a{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+  gap: 12px;
+}
+.g5b{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  gap: 12px;
+}
+/**Con auto fill quedan espacios vacios con auto fit los items ocupan el contendor completo*/
+
+.g6{
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 8px; /* row-gap y column-gap */
+
+}
+.g7{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(auto-fill, 60px);
+}
+
+.destacado{
+  grid-column: 1/3;
+}
+.alto{
+  grid-row: 2/4;
+}
+.ancho-total{
+  grid-column: 1/-1;
+
+}

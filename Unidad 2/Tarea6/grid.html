@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarea 2.6 Grid CSS</title>
+  <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Tarea 2.6 Grid CSS</h1>
+    <p>Cada sección te pide aplicar una parte de display: grid.</p>
+  </header>
+
+  <main>
+
+    <!-- PASO 1: columnas y filas -->
+    <section>
+      <h2>Columnas y filas</h2>
+      <h3>Tres columnas iguales</h3>
+      <div class="contenedor g1">
+        <div class="item it">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+
+      <h3>Columnas de distinto tipo</h3>
+      <div class="contenedor g2">
+        <div class="item">200px</div>
+        <div class="item">1fr</div>
+        <div class="item">2fr</div>
+      </div>
+
+      <h3>Filas con altura definida</h3>
+      <div class="contenedor g3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </section>
+
+    <!-- PASO 2: unidades flexibles y responsive -->
+    <section>
+      <h2>Unidades flexibles y columnas adaptables</h2>
+      <h3>Galería adaptable</h3>
+      <div class="contenedor g4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+      </div>
+
+      <h3>auto-fill</h3>
+      <div class="contenedor g5a">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+
+      <h3>auto-fit</h3>
+      <div class="contenedor g5b">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+    <!-- PASO 3: gap -->
+    <section>
+      <h2>Separación entre pistas</h2>
+      <div class="contenedor g6">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </div>
+    </section>
+
+    <!-- PASO 4: colocación por líneas -->
+    <section>
+      <h2>Colocación de ítems por líneas</h2>
+      <div class="contenedor g7">
+        <div class="item destacado">1 (destacado)</div>
+        <div class="item">2</div>
+        <div class="item alto">3 (alto)</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item ancho-total">7 (ancho total)</div>
+      </div>
+    </section>
+
+    <!-- PASO 5: filas implícitas -->
+    <section>
+      <h2>Filas implícitas</h2>
+      <div class="contenedor g8">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+      </div>
+    </section>
+
+    <!-- PASO 6: áreas con nombre -->
+    <section>
+      <h2>Diseño de página con áreas</h2>
+      <div class="miPagina">
+        <div class="cab">Cabecera</div>
+        <div class="menu mIzq">Menú Izquerdo</div>
+        <div class="cont">Contenido</div>
+        <div class="menu mDer1">Menú derecho1</div>
+        <div class="menu mDer2">Menú derecho2</div>
+
+        <div class="pie">Pie</div>
+      </div>
+    </section>
+
+    <!-- PASO 7: alineación  -->
+    <section>
+      <h2>Alineación.</h2>
+
+      <h3>Centrado con una sola línea</h3>
+      <div class="contenedor centro">
+        <p>Centrado en vertical y en horizontal</p>
+      </div>
+
+      <h3>A la derecha y arriba de cada celda</h3>
+      <div class="contenedor alto-fijo al1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+
+      <h3>Ítem independiente</h3>
+      <div class="contenedor alto-fijo al2">
+        <div class="item">1</div>
+        <div class="item centrado">2 (centro)</div>
+        <div class="item">3</div>
+      </div>
+
+      <h3>Alineando la rejilla grid en el contenedor</h3>
+      <div class="contenedor alto-fijo al3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+    <!-- PASO 8: inline-grid -->
+    <section>
+      <h2>Contenedor en línea (inline-grid)</h2>
+
+      <h3>display: grid (el contenedor se comporta como un bloque)</h3>
+      <p>
+        Texto antes
+        <span class="contenedor ig1"><span class="item">A</span><span class="item">B</span><span
+            class="item">C</span></span>
+        texto después.
+      </p>
+
+      <h3>display: inline-grid (el contenedor se comporta como un elemento en línea)</h3>
+      <p>
+        Texto antes
+        <span class="contenedor ig2"><span class="item">A</span><span class="item">B</span><span
+            class="item">C</span></span>
+        texto después.
+      </p>
+    </section>
+
+    <!-- PASO 9: Formulario -->
+
+    <section>
+      <h2>Formulario</h2>
+      <form class="contenedor formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo">
+        <label for="mensaje">Mensaje</label>
+        <input type="text" id="mensaje">
+      </form>
+    </section>
+
+    <!-- PASO 10: Imágenes grandes en flex y grid -->
+
+    <section>
+      <h2>Tamaño mínimo de imágenes en flex y grid</h2>
+      <h3>Tamaño mínimo en Flex</h3>
+      <div class="contenedor im1">
+        <img src="imagen.png" alt="imagen de prueba">
+        <div class="texto">Imagen de prueba</div>
+      </div>
+     
+      <h3>Tamaño mínimo en Grid</h3>
+      <div class="contenedor im2">
+        <img src="imagen.png" alt="imagen de prueba">
+        <div class="texto">Imagen de prueba</div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="pie">
+    <p>Fin de la Tarea 2.6</p>
+  </footer>
+
+</body>
+
+</html>
