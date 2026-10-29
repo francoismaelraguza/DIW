@@ -6,6 +6,9 @@
 h1, h2, h3{
     font-family: "Arial Black", serif;
 }
+p{
+    font-family: "Arial", serif;
+}
 body{
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -156,7 +159,9 @@ main{
 .cifras{
     display: flex;
     flex-direction: row;
-    background-color: #56D79F;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #90D59F;
     padding: 10px;
     border: 1px solid black;
     border-radius: 12px;
@@ -166,19 +171,44 @@ main{
 .cifra{
     display: flex;
     flex-direction: column;
+    flex: 1 1 150px;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+}
+.cifra-numero{
+    font-family: "Arial Black", serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    color: white;
 }
 .suscripcion{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #90D59F;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 20px;
+
 }
 .suscripcion-formulario{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+
 }
 
-
+.pie{
+    background-color: #BBE1D7;
+}
 footer h2{
     color: white;
+    border-color: whitesmoke;
 }
 .pie-columnas{
     display: grid;
