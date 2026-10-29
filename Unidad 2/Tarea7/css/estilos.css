@@ -8,6 +8,7 @@ h1, h2, h3{
 }
 body{
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     background:
             linear-gradient(to bottom, #BBE1D7, white, transparent),
             radial-gradient(ellipse at bottom, #1B744E, transparent);
@@ -16,7 +17,16 @@ body{
 
 .cabeceraContenido{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 8px 16px;
+    padding: 8px 16px;
+}
+.cabeceraLogo img{
+    display: block;
+    height: 48px;
+    width: auto;
+    max-width: 100%;
 }
 .separacion{
     flex: 1;
@@ -93,7 +103,7 @@ main{
 .destacados{
     display: grid;
     grid-template-columns: repeat(4,minmax(0,1fr));
-    grid-auto-rows: minmax(0,1fr);
+    grid-auto-rows: minmax(120px, 1fr);
     gap: 10px;
 
 }
@@ -111,13 +121,47 @@ main{
     border: 1px solid black;
 
 }
+.destacado img{
+    display: block;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: cover;
+}
 .destacado-pie{
-    padding: 2px;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+.destacado-grande .destacado-pie{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px){
+    .destacados{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .destacados{
+        grid-auto-rows: auto;
+    }
+    .destacado img{
+        flex: none;
+        aspect-ratio: 4 / 3;
+    }
+    .destacado-grande{
+        grid-column: 1/-1;
+        grid-row: auto;
+    }
 }
 
 .cifras{
     display: flex;
     flex-direction: row;
+    background-color: #56D79F;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    justify-content: center;
+    align-content: center;
 }
 .cifra{
     display: flex;
