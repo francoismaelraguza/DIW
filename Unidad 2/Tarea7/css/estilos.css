@@ -9,6 +9,12 @@ h1, h2, h3{
 p{
     font-family: "Arial", serif;
 }
+.contenedor{
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 16px;
+}
 body{
     display: grid;
     grid-template-columns: minmax(0, 1fr);
@@ -17,6 +23,9 @@ body{
             radial-gradient(ellipse at bottom, #1B744E, transparent);
 
 }
+.separacion{
+    flex: 1;
+}
 
 .cabeceraContenido{
     display: flex;
@@ -24,6 +33,7 @@ body{
     align-items: center;
     gap: 8px 16px;
     padding: 8px 16px;
+
 }
 .cabeceraLogo img{
     display: block;
@@ -31,9 +41,11 @@ body{
     width: auto;
     max-width: 100%;
 }
-.separacion{
-    flex: 1;
+
+.boton-hero{
+    background-color: #A3C69F;
 }
+
 .menu-lista{
     display: flex;
     flex-direction: row;
@@ -60,10 +72,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
 }
 .hero-titulo{
     color: white;
+
 }
+
 
 .bloque{
     display: flex;
@@ -99,7 +114,18 @@ main{
 .tarjeta-texto{
     flex: 1;
 }
+.boton{
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    cursor: pointer;
+}
 .boton-claro{
+    background-color: white;
+    color: #0B3D2B;
     align-self: flex-start;
 }
 
@@ -139,22 +165,7 @@ main{
     font-size: 1.1rem;
 }
 
-@media (max-width: 600px){
-    .destacados{
-        grid-template-columns: repeat(2, minmax(0,1fr));
-    }
-    .destacados{
-        grid-auto-rows: auto;
-    }
-    .destacado img{
-        flex: none;
-        aspect-ratio: 4 / 3;
-    }
-    .destacado-grande{
-        grid-column: 1/-1;
-        grid-row: auto;
-    }
-}
+
 
 .cifras{
     display: flex;
@@ -196,23 +207,46 @@ main{
     margin-top: 20px;
 
 }
+.suscripcion-texto{
+    flex: 1 1 250px;
+    align-self: center;
+}
 .suscripcion-formulario{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 280px;
     gap: 10px;
-
+}
+.suscripcion-formulario input{
+    flex: 1 1 200px;
+    min-width: 0;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-family: "Arial", sans-serif;
 }
 
 .pie{
     background-color: #BBE1D7;
+    margin-top: 40px;
+    padding: 24px 0 12px;
 }
-footer h2{
-    color: white;
-    border-color: whitesmoke;
+.pie-titulo{
+    color: #0B3D2B;
+    margin-bottom: 8px;
+}
+.pie-texto{
+    color: #0B3D2B;
+    font-style: normal;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
 }
 .pie-columnas{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
 }
 .pie-bloque{
     display: flex;
@@ -222,9 +256,24 @@ footer h2{
 .pie-barra{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 24px;
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #0B3D2B;
+    color: #0B3D2B;
+    font-size: 0.9rem;
 }
 .pie-enlaces{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
 }
+.pie-enlaces a{
+    color: #0B3D2B;
+}
+
