@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarea 2.7: Web Flex-Grid</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabeceraContenido">
+      <a class="cabeceraLogo" href="index.html">
+        <img src="img/logo-horizontal.svg" alt="Ruta Norte Bicis, ir al inicio">
+      </a>
+      <div class="separacion"></div>
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a class="menu-enlace" href="">Inicio</a></li>
+          <li><a class="menu-enlace" href="">Catálogo</a></li>
+          <li><a class="menu-enlace" href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-contenido">
+        <h1 class="hero-titulo">Pedalea más lejos con Ruta Norte</h1>
+        <p class="hero-texto">Bicicletas para cada camino, taller propio y alquiler por horas en el corazón de la
+          ciudad.</p>
+        <a class="boton boton-hero" href="paginas/catalogo.html">Ver el catálogo</a>
+      </div>
+    </section>
+
+    <div class="contenedor">
+      <section class="bloque">
+        <h2 class="bloque-titulo">Encuentra tu bicicleta</h2>
+        <div class="galeria">
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/sierra.svg" alt="Bicicleta de montaña Sierra 29">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Montaña</h3>
+              <p class="tarjeta-texto">Cuadro de aluminio y 21 velocidades para pistas y senderos.</p>
+              <a class="boton boton-claro" href="">Ver montaña</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/aero.svg" alt="Bicicleta de carretera Aero">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Carretera</h3>
+              <p class="tarjeta-texto">Ligeras, rápidas y con cuadro de carbono. Pensadas para sumar kilómetros sin
+                cansarte, tanto en asfalto como en rutas largas de fin de semana.</p>
+              <a class="boton boton-claro" href="">Ver carretera</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/ciudad.svg" alt="Bicicleta urbana plegable">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Urbana</h3>
+              <p class="tarjeta-texto">Plegable y cómoda.</p>
+              <a class="boton boton-claro" href="">Ver urbanas</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="img/pulso.svg" alt="Bicicleta eléctrica Pulso">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Eléctrica</h3>
+              <p class="tarjeta-texto">Asistencia al pedaleo para subir cuestas sin esfuerzo.</p>
+              <a class="boton boton-claro" href="#">Ver eléctricas</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bloque">
+        <h2 class="bloque-titulo">Novedades de la temporada</h2>
+        <div class="destacados">
+          <div class="destacado destacado-grande">
+            <img src="img/pulso.svg" alt="Bicicleta eléctrica Pulso">
+            <p class="destacado-pie">Novedad: Pulso Eléctrica</p>
+          </div>
+          <div class="destacado">
+            <img src="img/aero.svg" alt="Bicicleta de carretera Aero">
+            <p class="destacado-pie">Aero Carretera</p>
+          </div>
+          <div class="destacado">
+            <img src="img/ciudad.svg" alt="Bicicleta urbana plegable">
+            <p class="destacado-pie">Ciudad Plegable</p>
+          </div>
+          <div class="destacado">
+            <img src="img/trail.svg" alt="Casco Trail">
+            <p class="destacado-pie">Casco Trail</p>
+          </div>
+          <div class="destacado">
+            <img src="img/candado.svg" alt="Candado en U">
+            <p class="destacado-pie">Candado en U</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque">
+        <h2 class="bloque-titulo">Ruta Norte en cifras</h2>
+        <div class="cifras">
+          <p class="cifra"><span class="cifra-numero">2 500</span> bicis vendidas</p>
+          <p class="cifra"><span class="cifra-numero">15</span> años de taller</p>
+          <p class="cifra"><span class="cifra-numero">6</span> rutas guiadas</p>
+        </div>
+      </section>
+
+      <section class="bloque">
+        <div class="suscripcion">
+          <p class="suscripcion-texto"><strong>Recibe nuestras ofertas</strong> y las rutas del mes en tu correo.</p>
+          <form class="suscripcion-formulario" action="">
+            <input type="email" id="suscripcion-correo" name="correo" placeholder="Aquí tu correo electrónico">
+            <button class="boton boton-claro" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-columnas">
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Ruta Norte Bicis</h2>
+          <p class="pie-texto">Venta, taller de reparación y alquiler de bicicletas de montaña, carretera y ciudad.</p>
+        </div>
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Visítanos</h2>
+          <address class="pie-texto">Avenida de la Marina, 48<br>15004 A Coruña<br>Tel. 981 000 222</address>
+        </div>
+        <div class="pie-bloque horario">
+          <h2 class="pie-titulo">Horario</h2>
+          <p class="pie-texto">Lunes a viernes: 9:30 – 13:30 y 16:30 – 20:00<br>Sábado: 10:00 – 14:00</p>
+        </div>
+      </div>
+      <div class="pie-barra">
+        <p>© 2026 Ruta Norte Bicis. Todos los derechos reservados.</p>
+        <ul class="pie-enlaces">
+          <li><a href="">Aviso legal</a></li>
+          <li><a href="">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
