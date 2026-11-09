@@ -337,7 +337,7 @@ main{
     gap: 8px;
 
 }
-.paginacion-lista .boton, .filtros-form .boton{
+.paginacion-lista .boton, .filtros-form .boton, .formulario-acciones .boton{
     background-color: darkred;
     color: whitesmoke;
     align-self: flex-start;
@@ -384,32 +384,96 @@ main{
     flex-direction: column;
 }
 
+.titulo-pagina{
+    border-bottom: 1px solid black;
+}
+
+.titulo-pagina p{
+    margin-bottom: 10px;
+}
+
 .contacto{
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+
+
 }
 .formulario{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 16px 16px;
+
 }
+
 .campo-completo{
     grid-column: 1/-1;
+
 
 }
 
 .campo {
     display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    padding: 10px 14px;
+    border: 1px solid black;
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
 
 .formulario-acciones{
     display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
-.lateral{
+.contacto .lateral{
     display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
+.lateral .panel{
+    align-self: stretch;
+}
+
 .datos{
     display: grid;
+    list-style: none;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 5px 10px;
+    align-items: center;
+    margin-top: 8px;
 }
-.horario-contacto{}
 
+.horario-contacto {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 5px 16px;
+    margin-top: 8px;
+}
+.horario-contacto dt{
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+}
+.horario-contacto dd{
+    font-family: "Arial", sans-serif;
+}
+.mapa{
+    width: 100%;
+    height: 220px;
+    border: 2px solid #1B744E;
+    border-radius: 12px;
+}
 
