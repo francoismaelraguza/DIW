@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logotipo">
+  <title>Logotipo</title>
+  <circle cx="32" cy="32" r="30" fill="#3a5a40"/>
+  <path d="M14 46 Q32 36 50 16" stroke="#f6efe0" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M22 41 q-8 -6 -4 -14 q8 2 4 14z" fill="#9ccc8a"/>
+  <path d="M30 36 q-6 -10 2 -16 q6 8 -2 16z" fill="#9ccc8a"/>
+  <path d="M38 30 q2 -12 12 -12 q0 10 -12 12z" fill="#9ccc8a"/>
+  <ellipse cx="22" cy="46" rx="6" ry="4.5" fill="#c8553d" transform="rotate(-20 22 46)"/>
+  <ellipse cx="34" cy="42" rx="6" ry="4.5" fill="#1f2d22" transform="rotate(-20 34 42)"/>
+  <ellipse cx="44" cy="35" rx="5.5" ry="4" fill="#c8553d" transform="rotate(-20 44 35)"/>
+</svg>

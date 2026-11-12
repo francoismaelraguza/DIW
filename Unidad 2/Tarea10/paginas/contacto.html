@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto. RNB</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera-contenido">
+      <a class="cabecera-logo" href="../index.html">
+        <img src="../img/logo-horizontal.svg" alt="Ruta Norte Bicis, ir al inicio">
+      </a>
+      <div class="separacion"></div>
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a class="menu-enlace" href="../index.html">Inicio</a></li>
+          <li><a class="menu-enlace" href="catalogo.html">Catálogo</a></li>
+          <li><a class="menu-enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor contenedor-contacto">
+      <div class="titulo-pagina">
+        <h1>Contacto y cita para taller</h1>
+        <p>Escríbenos para pedir presupuesto, reservar una reparación o alquilar una bicicleta.</p>
+      </div>
+
+      <div class="contacto">
+        <form class="formulario" action="" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+          <div class="campo">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo">
+              <option>Comprar una bicicleta</option>
+              <option>Reparación en el taller</option>
+              <option>Alquiler</option>
+            </select>
+          </div>
+          <div class="campo campo-completo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+          </div>
+          <div class="formulario-acciones">
+            <button class="boton" type="reset">Borrar</button>
+            <button class="boton" type="submit">Enviar mensaje</button>
+          </div>
+        </form>
+
+        <aside class="lateral">
+          <section class="panel">
+            <h2 class="panel-titulo">Datos de contacto</h2>
+            <ul class="datos">
+              <span>🏠</span> <li class="dato">Avenida de la Marina, 48 - A Coruña</li>
+              <span>📞</span> <li class="dato">981 000 222</li>
+              <span>📧</span> <li class="dato">info@rutanorte.mail</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <h2 class="panel-titulo">Horario</h2>
+            <dl class="horario-contacto">
+              <dt>Lunes a viernes</dt>
+              <dd>9:30 – 20:00</dd>
+              <dt>Sábado</dt>
+              <dd>10:00 – 14:00</dd>
+              <dt>Domingo</dt>
+              <dd>Cerrado</dd>
+            </dl>
+          </section>
+            <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.3104384638773!2d-8.40032762435849!3d43.37053257066794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c7f6d65f24b%3A0x5fae3cf8c1dbd012!2sLA%20MARINA!5e0!3m2!1ses!2ses!4v1793186921720!5m2!1ses!2ses"  
+            allowfullscreen=""
+            loading="lazy"  
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-columnas">
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Ruta Norte Bicis</h2>
+          <p class="pie-texto">Venta, taller de reparación y alquiler de bicicletas de montaña, carretera y ciudad.</p>
+        </div>
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Visítanos</h2>
+          <address class="pie-texto">Avenida de la Marina, 48<br>15004 A Coruña<br>Tel. 981 000 222</address>
+        </div>
+        <div class="pie-bloque horario">
+          <h2 class="pie-titulo">Horario</h2>
+          <p class="pie-texto">Lunes a viernes: 9:30 – 13:30 y 16:30 – 20:00<br>Sábado: 10:00 – 14:00</p>
+        </div>
+      </div>
+      <div class="pie-barra">
+        <p>© 2026 Ruta Norte Bicis. Todos los derechos reservados.</p>
+        <ul class="pie-enlaces">
+          <li><a href="">Aviso legal</a></li>
+          <li><a href="">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

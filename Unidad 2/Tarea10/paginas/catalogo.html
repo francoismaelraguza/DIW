@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo. RNB</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera-contenido">
+      <a class="cabecera-logo" href="../index.html">
+        <img src="../img/logo-horizontal.svg" alt="Ruta Norte Bicis, ir al inicio">
+      </a>
+      <div class="separacion"></div>
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a class="menu-enlace" href="../index.html">Inicio</a></li>
+          <li><a class="menu-enlace" href="catalogo.html">Catálogo</a></li>
+          <li><a class="menu-enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class=" contenedor pagina-listado">
+      <div class="listado-titulo">
+        <h1>Catálogo</h1>
+        <p>Bicicletas y accesorios para todos los caminos.</p>
+      </div>
+
+      <section class="listado">
+        <h2 id="listado-titulo" class="bloque-titulo">Productos disponibles</h2>
+        <div class="productos">
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/sierra.svg" alt="Bicicleta de montaña Sierra 29">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Sierra 29</h3>
+              <p class="tarjeta-texto">Montaña, aluminio, 21 velocidades.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Montaña</li>
+                <li class="etiqueta">Suspensión</li>
+              </ul>
+              <p class="tarjeta-precio">699 €</p>
+              <a class="boton boton-claro" href="">Ver detalles</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/aero.svg" alt="Bicicleta de carretera Aero">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Aero Carretera</h3>
+              <p class="tarjeta-texto">Carretera ligera con cuadro de carbono.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Carretera</li>
+                <li class="etiqueta">Carbono</li>
+              </ul>
+              <p class="tarjeta-precio">1.450 €</p>
+              <a class="boton boton-claro" href="#">Ver detalles</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/ciudad.svg" alt="Bicicleta urbana plegable">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Ciudad Plegable</h3>
+              <p class="tarjeta-texto">Urbana plegable, ideal para combinar con el tren.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Urbana</li>
+                <li class="etiqueta">Plegable</li>
+              </ul>
+              <p class="tarjeta-precio">520 €</p>
+              <a class="boton boton-claro" href="#">Ver detalles</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/pulso.svg" alt="Bicicleta eléctrica Pulso">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Pulso Eléctrica</h3>
+              <p class="tarjeta-texto">Asistencia al pedaleo hasta 25km/h.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Eléctrica</li>
+                <li class="etiqueta">Urbana</li>
+              </ul>
+              <p class="tarjeta-precio">1.890 €</p>
+              <a class="boton boton-claro" href="#">Ver detalles</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/trail.svg" alt="Casco Trail">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Casco Trail</h3>
+              <p class="tarjeta-texto">Casco ventilado con visera regulable.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Accesorio</li>
+                <li class="etiqueta">Seguridad</li>
+              </ul>
+              <p class="tarjeta-precio">59 €</p>
+              <a class="boton boton-claro" href="#">Ver detalles</a>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img class="tarjeta-imagen" src="../img/candado.svg" alt="Candado en U">
+            <div class="tarjeta-cuerpo">
+              <h3 class="tarjeta-titulo">Candado en U</h3>
+              <p class="tarjeta-texto">Acero reforzado con dos llaves.</p>
+              <ul class="etiquetas">
+                <li class="etiqueta">Accesorio</li>
+                <li class="etiqueta">Seguridad</li>
+              </ul>
+              <p class="tarjeta-precio">34 €</p>
+              <a class="boton boton-claro" href="#">Ver detalles</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <nav class="paginacion">
+        <ul class="paginacion-lista">
+          <li><a class="boton" href="">1</a></li>
+          <li><a class="boton" href="">2</a></li>
+          <li><a class="boton" href="">3</a></li>
+        </ul>
+      </nav>
+
+      <aside class="filtros panel">
+        <h2 id="filtros-titulo" class="panel-titulo">Filtros</h2>
+        <form class="filtros-form" action="#">
+          <fieldset class="filtros-grupo">
+            <label class="filtro"><input type="checkbox" name="tipo" value="montana"> Montaña</label>
+            <label class="filtro"><input type="checkbox" name="tipo" value="carretera"> Carretera</label>
+            <label class="filtro"><input type="checkbox" name="tipo" value="urbana"> Urbana</label>
+            <label class="filtro"><input type="checkbox" name="tipo" value="electrica"> Eléctrica</label>
+            <label class="filtro"><input type="checkbox" name="tipo" value="accesorios"> Accesorios</label>
+          </fieldset>
+          <button class="boton" type="submit">Aplicar filtros</button>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-columnas">
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Ruta Norte Bicis</h2>
+          <p class="pie-texto">Venta, taller de reparación y alquiler de bicicletas de montaña, carretera y ciudad.</p>
+        </div>
+        <div class="pie-bloque">
+          <h2 class="pie-titulo">Visítanos</h2>
+          <address class="pie-texto">Avenida de la Marina, 48<br>15004 A Coruña<br>Tel. 981 000 222</address>
+        </div>
+        <div class="pie-bloque horario">
+          <h2 class="pie-titulo">Horario</h2>
+          <p class="pie-texto">Lunes a viernes: 9:30 – 13:30 y 16:30 – 20:00<br>Sábado: 10:00 – 14:00</p>
+        </div>
+      </div>
+      <div class="pie-barra">
+        <p>© 2026 Ruta Norte Bicis. Todos los derechos reservados.</p>
+        <ul class="pie-enlaces">
+          <li><a href="">Aviso legal</a></li>
+          <li><a href="">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
